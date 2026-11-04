@@ -10,7 +10,8 @@ effort are fixed in its file, so the right model does each job whatever model yo
 | Coding: Luau, Python, tools and Studio scripts, debugging, code review | `dev-coder` | Sonnet 5.5, xhigh |
 | Research: questions and option comparisons from the code, docs and web | `dev-research` | Opus 5.5, medium |
 | Modelling and animation: plans, briefs, checks renders and asserts | `dev-model-lead` | Opus 5.5, high |
-| Modelling and animation: builds in Blender or Blockbench | `dev-modeller` | DeepSeek V4.1 Flash (OpenCode Go), max |
+| Modelling and animation: builds in Blender or Blockbench | `dev-modeller` | DeepSeek V4.1 Flash Free (OpenCode), max |
+| The same, when the free model is rate-limited | `dev-modeller-go` | DeepSeek V4.1 Flash (OpenCode Go), max |
 | Map assembly: layout, placing models, terrain, dressing | `dev-map` | Opus 5.5, high |
 | Mechanical: decided edits, re-runs, exports, docs write-back, commits, status | `dev-mechanic` | Haiku 5.5, high |
 
@@ -26,7 +27,9 @@ Reload the project in OpenChamber (or restart OpenCode), then pick `roblox-studi
 
 ## Models
 
-The ids use the Claude Code provider (`claude-code/...`) and OpenCode Go for DeepSeek. On another provider, change the
+The ids use the Claude Code provider (`claude-code/...`) and OpenCode for DeepSeek. To save usage, `dev-model-lead`
+sends every brief to the free `dev-modeller` first and moves it to the paid `dev-modeller-go` only when the free model
+hits its rate or usage limit; the next brief tries the free one again. On another provider, change the
 `model:` line in each file to that provider's id (`opencode models` lists them); the part after `#` is the effort.
 
 ## How it stays on the right models
