@@ -7,7 +7,8 @@ effort are fixed in its file, so the right model does each job whatever model yo
 | Work | Agent | Model, effort |
 |------|-------|---------------|
 | Dispatch, game design, planning, architecture | `roblox-studio-dev` (primary) | Opus 5.5, high |
-| Coding: Luau, Python, tools and Studio scripts, debugging, code review | `dev-coder` | Sonnet 5.5, xhigh |
+| Routine coding: tool and Studio scripts, kit fixes, features with a decided design, refactors | `dev-coder` | Sonnet 5.5, high |
+| Hard coding: new systems, debugging an unknown cause, networking, saves, security, performance, code review | `dev-coder-deep` | Sonnet 5.5, xhigh |
 | Research: questions and option comparisons from the code, docs and web | `dev-research` | Opus 5.5, medium |
 | Modelling and animation: plans, briefs, checks renders and asserts | `dev-model-lead` | Opus 5.5, high |
 | Modelling and animation: builds in Blender or Blockbench | `dev-modeller` | DeepSeek V4.1 Flash Free (OpenCode), high |
@@ -35,7 +36,7 @@ hits its rate or usage limit; the next brief tries the free one again. On anothe
 ## How it stays on the right models
 
 - Each subagent's model is set in its file, not chosen at run time.
-- The dispatcher may only spawn the five role agents. Each subagent may spawn only what its role needs (mostly
+- The dispatcher may only spawn the six role agents. Each subagent may spawn only what its role needs (mostly
   `dev-mechanic`), so no agent re-dispatches its own work.
 - Briefs are self-contained, results are checked before they are reported, and a failed check goes back to the same
   subagent.
