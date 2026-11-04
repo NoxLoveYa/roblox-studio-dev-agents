@@ -10,8 +10,8 @@ effort are fixed in its file, so the right model does each job whatever model yo
 | Coding: Luau, Python, tools and Studio scripts, debugging, code review | `dev-coder` | Sonnet 5.5, xhigh |
 | Research: questions and option comparisons from the code, docs and web | `dev-research` | Opus 5.5, medium |
 | Modelling and animation: plans, briefs, checks renders and asserts | `dev-model-lead` | Opus 5.5, high |
-| Modelling and animation: builds in Blender or Blockbench | `dev-modeller` | DeepSeek V4.1 Flash Free (OpenCode), max |
-| The same, when the free model is rate-limited | `dev-modeller-go` | DeepSeek V4.1 Flash (OpenCode Go), max |
+| Modelling and animation: builds in Blender or Blockbench | `dev-modeller` | DeepSeek V4.1 Flash Free (OpenCode), high |
+| The same, when the free model is rate-limited | `dev-modeller-go` | DeepSeek V4.1 Flash (OpenCode Go), high |
 | Map assembly: layout, placing models, terrain, dressing | `dev-map` | Opus 5.5, high |
 | Mechanical: decided edits, re-runs, exports, docs write-back, commits, status | `dev-mechanic` | Haiku 5.5, high |
 

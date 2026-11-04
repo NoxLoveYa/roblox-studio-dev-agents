@@ -1,7 +1,7 @@
 ---
-description: Modelling and animation worker on paid DeepSeek V4.1 Flash (OpenCode Go, max). Same job as dev-modeller; use it only when free dev-modeller is rate-limited.
+description: Modelling and animation worker on paid DeepSeek V4.1 Flash (OpenCode Go, high). Same job as dev-modeller; use it only when free dev-modeller is rate-limited.
 mode: subagent
-model: opencode-go/deepseek-v4.1-flash#max
+model: opencode-go/deepseek-v4.1-flash#high
 color: "#4d6bfe"
 permissions:
   - { action: subagent, resource: "*", effect: deny }
