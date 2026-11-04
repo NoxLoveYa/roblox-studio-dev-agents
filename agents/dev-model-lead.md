@@ -1,7 +1,7 @@
 ---
 description: Modelling and animation lead (Opus 5.5 high). Plans models, rigs, clips and textures, briefs dev-modeller workers, checks asserts and renders, decides fixes.
 mode: subagent
-model: claude-code/claude-opus-5-5[1m]#high
+model: claude-agent/opus#high
 color: "#10b981"
 permissions:
   - { action: subagent, resource: "*", effect: deny }

@@ -1,7 +1,7 @@
 ---
 description: Dispatcher for Roblox game projects. Splits each request by role and spawns the dev-* subagents on their fixed models; does design, planning and architecture itself.
 mode: primary
-model: claude-code/claude-opus-5-5[1m]#high
+model: claude-agent/opus#high
 color: "#e05a2b"
 permissions:
   - { action: subagent, resource: "*", effect: deny }

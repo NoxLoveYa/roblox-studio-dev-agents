@@ -1,7 +1,7 @@
 ---
 description: Research subagent (Opus 5.5 medium). Answers a question or compares options from the codebase, docs and the web. Changes nothing.
 mode: subagent
-model: claude-code/claude-opus-5-5[1m]#medium
+model: claude-agent/opus#medium
 color: "#8b5cf6"
 permissions:
   - { action: subagent, resource: "*", effect: deny }

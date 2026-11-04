@@ -1,7 +1,7 @@
 ---
 description: Map assembly subagent (Opus 5.5 high). Layout, placing models, terrain and dressing in a place.
 mode: subagent
-model: claude-code/claude-opus-5-5[1m]#high
+model: claude-agent/opus#high
 color: "#f59e0b"
 permissions:
   - { action: subagent, resource: "*", effect: deny }

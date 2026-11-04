@@ -1,7 +1,7 @@
 ---
 description: Mechanical worker (Haiku 5.5 high). Applies decided edits, re-runs checks and scripts, exports and imports, docs write-back, commits and pushes, renames, bulk replace, status. Give it exact steps.
 mode: subagent
-model: claude-code/claude-haiku-5-5#high
+model: claude-agent/haiku#high
 color: "#94a3b8"
 permissions:
   - { action: subagent, resource: "*", effect: deny }

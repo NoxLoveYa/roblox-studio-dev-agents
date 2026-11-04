@@ -1,7 +1,7 @@
 ---
 description: Hard coding subagent (Sonnet 5.5 xhigh). New systems, debugging an unknown cause, networking, saves, security, performance, code review. Brief it with the goal, files, decisions and the done check.
 mode: subagent
-model: claude-code/claude-sonnet-5-5[1m]#xhigh
+model: claude-agent/sonnet#xhigh
 color: "#1d4ed8"
 permissions:
   - { action: subagent, resource: "*", effect: deny }

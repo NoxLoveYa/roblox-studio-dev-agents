@@ -28,7 +28,7 @@ Reload the project in OpenChamber (or restart OpenCode), then pick `roblox-studi
 
 ## Models
 
-The ids use the Claude Code provider (`claude-code/...`) and OpenCode for DeepSeek. To save usage, `dev-model-lead`
+The ids use the Claude Agent provider (`claude-agent/opus`, `claude-agent/sonnet`, `claude-agent/haiku`) and OpenCode for DeepSeek. To save usage, `dev-model-lead`
 sends every brief to the free `dev-modeller` first and moves it to the paid `dev-modeller-go` only when the free model
 hits its rate or usage limit; the next brief tries the free one again. On another provider, change the
 `model:` line in each file to that provider's id (`opencode models` lists them); the part after `#` is the effort.

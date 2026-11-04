@@ -1,7 +1,7 @@
 ---
 description: Routine coding subagent (Sonnet 5.5 high). Tool and Studio scripts, kit fixes, features with a decided design, refactors, re-runs of its own checks. Brief it with the goal, files, decisions and the done check.
 mode: subagent
-model: claude-code/claude-sonnet-5-5[1m]#high
+model: claude-agent/sonnet#high
 color: "#3b82f6"
 permissions:
   - { action: subagent, resource: "*", effect: deny }
