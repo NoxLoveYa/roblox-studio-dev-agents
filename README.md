@@ -8,7 +8,7 @@ effort are fixed in its file, so the right model does each job whatever model yo
 |------|-------|---------------|
 | Dispatch, game design, planning, architecture | `roblox-studio-dev` (primary) | Opus 5.5, high |
 | Routine coding: tool and Studio scripts, kit fixes, features with a decided design, refactors | `dev-coder` | Sonnet 5.5, high |
-| Hard coding: new systems, debugging an unknown cause, networking, saves, security, performance, code review | `dev-coder-deep` | Sonnet 5.5, xhigh |
+| Hard coding: new systems, debugging an unknown cause, networking, saves, security, performance, code review | `dev-coder-deep` | Opus 5.5, high |
 | Research: questions and option comparisons from the code, docs and web | `dev-research` | Opus 5.5, medium |
 | Modelling and animation: plans, briefs, checks renders and asserts | `dev-model-lead` | Opus 5.5, high |
 | Modelling and animation: builds in Blender or Blockbench | `dev-modeller` | DeepSeek V4.1 Flash Free (OpenCode), high |
