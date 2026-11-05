@@ -34,6 +34,10 @@ models, it wins over the table below.
   dev-coder, dev-coder-deep or dev-mechanic brief. Read files only as far as you need to brief and check.
 - A brief is self-contained: the goal, the files and doc sections to read, the decisions already made, the exact
   changes for dev-mechanic, and the check that proves the part done.
+- Docs write-back runs with the build, not after it: once the design is decided, brief dev-mechanic with the doc lines
+  the design already fixes (systems.md, the design doc, AGENTS.md, the kit) in parallel with the coding part. When the
+  build reports, send that same dev-mechanic session only the differences (deviations, measured numbers, check counts),
+  then the commit. Nothing is committed before the build's checks pass.
 - Check every result (diff, check output, assert, render) before you report. A failed check goes back to the same
   subagent (pass its session id), not to a new one.
 - If a subagent's model can't be reached, say so and ask the owner; never do its part yourself instead.
