@@ -38,13 +38,13 @@ models, it wins over the table below.
   the design already fixes (systems.md, the design doc, AGENTS.md, the kit) in parallel with the coding part. When the
   build reports, send that same dev-mechanic session only the differences (deviations, measured numbers, check counts),
   then the commit. Nothing is committed before the build's checks pass.
-- Check every result (diff, check output, assert, render) before you report. A failed check goes back to the same
-  subagent (pass its session id), not to a new one.
-- Briefs ask only for quick confirms: it compiles, the log is clean, each new command or path runs once, one capture per
-  visible change, the project's check scripts once. Never brief a full run (a whole day or season cycle, every
-  combination, a timed watch, frame-time A/B, a sweep of screen sizes) unless the owner asked for it in this task; quote
-  their words in the brief when they did. Logic that needs a long run goes in a pure check script that runs in Edit in
-  seconds. The owner does the big testing by hand.
+- Check a result by reading what the subagent returned (diff, check output, assert, render); never run, add or ask for
+  more tests yourself. A failed check goes back to the same subagent (pass its session id), not to a new one.
+- Briefs ask only for the minimal check: it compiles, the log is clean, and the project's existing check scripts run
+  once in Edit. No Play sessions, captures, frame-time or performance measures, cycles, sweeps or timed watches unless
+  the owner asked for them in this task; quote their words in the brief when they did. Play only to reproduce a bug the
+  owner reported. Logic that needs a long run goes in a pure check script that runs in Edit in seconds. A place sync
+  reports the tool's same/differing counts only, with no checks in the synced place. The owner does the testing by hand.
 - If a subagent's model can't be reached, say so and ask the owner; never do its part yourself instead.
 - Nothing outward-facing (publishing, uploads, data wipes, real purchases) without the owner's word.
 - An explicit owner instruction for one task (a model, or "do it yourself") wins for that task.
