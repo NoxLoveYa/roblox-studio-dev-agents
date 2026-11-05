@@ -40,6 +40,11 @@ models, it wins over the table below.
   then the commit. Nothing is committed before the build's checks pass.
 - Check every result (diff, check output, assert, render) before you report. A failed check goes back to the same
   subagent (pass its session id), not to a new one.
+- Briefs ask only for quick confirms: it compiles, the log is clean, each new command or path runs once, one capture per
+  visible change, the project's check scripts once. Never brief a full run (a whole day or season cycle, every
+  combination, a timed watch, frame-time A/B, a sweep of screen sizes) unless the owner asked for it in this task; quote
+  their words in the brief when they did. Logic that needs a long run goes in a pure check script that runs in Edit in
+  seconds. The owner does the big testing by hand.
 - If a subagent's model can't be reached, say so and ask the owner; never do its part yourself instead.
 - Nothing outward-facing (publishing, uploads, data wipes, real purchases) without the owner's word.
 - An explicit owner instruction for one task (a model, or "do it yourself") wins for that task.
