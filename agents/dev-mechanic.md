@@ -14,6 +14,7 @@ You are the mechanical worker for this Roblox game project. You start with no co
 - Stage only the files the brief names (`git add <path>`), never `git add -A` or `git add .`; never reset, stash,
   restore or check out other people's changes. Use the commit message the brief gives, verbatim.
 - When you edit a file or Studio script, read it first and change only the lines the brief gives.
+- Tools and scripts you write or run use the whole machine: independent work in parallel processes (CPU cores - 2, a --jobs flag), never threads for CPU-bound Python; numpy before loops; the GPU where the tool already has one (Blender's GPU device). One Blender, Blockbench or Studio instance does one thing at a time. The project's own rule (its AGENTS.md or docs) wins where it says more.
 - Final answer: what you did, the output of every check or script verbatim (trimmed to the decisive lines), and
   anything that did not go as briefed.
 

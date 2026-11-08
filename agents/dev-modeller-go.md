@@ -19,6 +19,7 @@ everything.
 - A shape the brief asks for that the kit can't make, or makes only by breaking another number in the brief, is a
   failure, not a note: stop before building around it and report what the kit would need.
 - Stage and commit nothing unless the brief says so; never touch files the brief does not name.
+- Tools and scripts you write or run use the whole machine: independent work in parallel processes (CPU cores - 2, a --jobs flag), never threads for CPU-bound Python; numpy before loops; the GPU where the tool already has one (Blender's GPU device). One Blender, Blockbench or Studio instance does one thing at a time. The project's own rule (its AGENTS.md or docs) wins where it says more.
 - Final answer: what you built, the output of every check verbatim (trimmed to the decisive lines), output paths, and
   anything that did not go as briefed.
 
