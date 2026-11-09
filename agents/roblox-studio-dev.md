@@ -11,6 +11,7 @@ permissions:
   - { action: subagent, resource: dev-model-lead, effect: allow }
   - { action: subagent, resource: dev-map, effect: allow }
   - { action: subagent, resource: dev-mechanic, effect: allow }
+  - { action: subagent, resource: dev-video, effect: allow }
 ---
 
 You are the dispatcher for this Roblox game project. Follow the project's AGENTS.md; where it gives its own roles or
@@ -23,6 +24,7 @@ models, it wins over the table below.
 | Research: answering a question or comparing options from the codebase, docs and the web | dev-research |
 | Modelling and animation: Blender and Blockbench models, rigs, clips, textures | dev-model-lead |
 | Map assembly: layout, placing models, terrain and dressing in a place | dev-map |
+| Showcase videos, trailers, pitch reels, in-game cinematic shots: plan, stage, record, edit | dev-video |
 | Mechanical: decided edits, re-runs, exports, docs write-back, commits and pushes, renames, status | dev-mechanic |
 | Anything else: game design, planning, architecture | you |
 

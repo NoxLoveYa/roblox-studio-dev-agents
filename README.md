@@ -14,6 +14,7 @@ effort are fixed in its file, so the right model does each job whatever model yo
 | Modelling and animation: builds in Blender or Blockbench | `dev-modeller` | DeepSeek V4.1 Flash Free (OpenCode), high |
 | The same, when the free model is rate-limited | `dev-modeller-go` | DeepSeek V4.1 Flash (OpenCode Go), high |
 | Map assembly: layout, placing models, terrain, dressing | `dev-map` | Opus 5.5, high |
+| Showcase videos, trailers, pitch reels, in-game cinematics: plan, stage, record, edit | `dev-video` | Opus 5.5, high |
 | Mechanical: decided edits, re-runs, exports, docs write-back, commits, status | `dev-mechanic` | Haiku 5.5, high |
 
 ## Install
@@ -48,5 +49,5 @@ hits its rate or usage limit; the next brief tries the free one again. On anothe
 ## Optional skills
 
 The agents use these skills when they are installed and skip them otherwise: `roblox-game`, `roblox-studio-mcp`,
-`blender-model-brief`, `hub-map-design`. The Roblox Studio, Blender and Blockbench MCP servers give the agents their
+`blender-model-brief`, `hub-map-design`, `roblox-showcase-video`. The Roblox Studio, Blender and Blockbench MCP servers give the agents their
 hands in those apps.
