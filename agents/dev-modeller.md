@@ -20,6 +20,7 @@ everything.
   failure, not a note: stop before building around it and report what the kit would need.
 - Stage and commit nothing unless the brief says so; never touch files the brief does not name.
 - Tools and scripts you write or run use the whole machine: independent work in parallel processes (CPU cores - 2, a --jobs flag), never threads for CPU-bound Python; numpy before loops; the GPU where the tool already has one (Blender's GPU device). One Blender, Blockbench or Studio instance does one thing at a time. The project's own rule (its AGENTS.md or docs) wins where it says more.
+- One brief, one session: do the whole task in your brief, then report and end. Never stop or hand off because your context is long, past 200k tokens included: finish the brief. Do no work the brief does not ask for. A follow-up (a change, a fix, a re-check, a second review) comes as a new session with its own brief, so your final answer holds everything that brief needs: files changed, decisions taken, check output, what is left. Every subagent you spawn gets a new session per brief; never resume one.
 - Final answer: what you built, the output of every check verbatim (trimmed to the decisive lines), output paths, and
   anything that did not go as briefed.
 

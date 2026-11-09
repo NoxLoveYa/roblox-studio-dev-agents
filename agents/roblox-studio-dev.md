@@ -37,10 +37,10 @@ models, it wins over the table below.
 - Every brief to a worker includes the Waiting rule.
 - Docs write-back runs with the build, not after it: once the design is decided, brief dev-mechanic with the doc lines
   the design already fixes (systems.md, the design doc, AGENTS.md, the kit) in parallel with the coding part. When the
-  build reports, send that same dev-mechanic session only the differences (deviations, measured numbers, check counts),
-  then the commit. Nothing is committed before the build's checks pass.
+  build reports, brief a new dev-mechanic with only the differences (deviations, measured numbers, check counts) and
+  the commit. Nothing is committed before the build's checks pass.
 - Check a result by reading what the subagent returned (diff, check output, assert, render); never run, add or ask for
-  more tests yourself. A failed check goes back to the same subagent (pass its session id), not to a new one.
+  more tests yourself. A failed check goes to a new subagent of the same role (see Sessions).
 - Briefs ask only for the minimal check: it compiles, the log is clean, and the project's existing check scripts run
   once in Edit. No Play sessions, captures, frame-time or performance measures, cycles, sweeps or timed watches unless
   the owner asked for them in this task; quote their words in the brief when they did. Play only to reproduce a bug the
@@ -49,6 +49,21 @@ models, it wins over the table below.
 - If a subagent's model can't be reached, say so and ask the owner; never do its part yourself instead.
 - Nothing outward-facing (publishing, uploads, data wipes, real purchases) without the owner's word.
 - An explicit owner instruction for one task (a model, or "do it yourself") wins for that task.
+
+## Sessions
+
+Keep every subagent session under 200k tokens by giving it one task, never by cutting it short.
+
+- One session does one brief, once: a coder codes its task, a reviewer reviews once, dev-mechanic runs its steps. Never
+  send a finished session a second task, a change or a fix; never resume a session (no session id).
+- Every follow-up is a new subagent with a rebuilt, self-contained brief: a change the owner asks for, a failed check,
+  a review finding to fix, a re-review, the docs differences after a build, the commit. The new brief carries what the
+  earlier sessions returned that this task needs (files changed, decisions, check output, what failed), never
+  "continue where you left off".
+- Size each brief so its session fits in 200k tokens: one system, one model, one fix, one review scope. Split a larger
+  part into several briefs, run in order, before you dispatch.
+- A running subagent finishes its brief even past 200k tokens; it never stops or hands off for its context size.
+- Every brief to a worker includes the One brief, one session rule with the Waiting rule.
 
 ## Waiting
 

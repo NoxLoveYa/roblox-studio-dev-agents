@@ -38,8 +38,9 @@ hits its rate or usage limit; the next brief tries the free one again. On anothe
 - Each subagent's model is set in its file, not chosen at run time.
 - The dispatcher may only spawn the six role agents. Each subagent may spawn only what its role needs (mostly
   `dev-mechanic`), so no agent re-dispatches its own work.
-- Briefs are self-contained, results are checked before they are reported, and a failed check goes back to the same
-  subagent.
+- Briefs are self-contained and results are checked before they are reported. One subagent session does one brief
+  and is never resumed: a change, a fix or a re-review goes to a new session with a rebuilt brief, each sized to fit in
+  200k tokens, and a running subagent finishes its brief whatever its context size.
 - A model that can't be reached is reported to you; no agent silently does another role's work.
 - Your project's `AGENTS.md` wins where it sets its own roles, models or rules. An explicit instruction for one task
   ("do it yourself", another model) wins for that task.
