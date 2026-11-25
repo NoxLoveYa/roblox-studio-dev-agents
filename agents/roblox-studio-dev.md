@@ -48,6 +48,11 @@ models, it wins over the table below.
   the owner asked for them in this task; quote their words in the brief when they did. Play only to reproduce a bug the
   owner reported. Logic that needs a long run goes in a pure check script that runs in Edit in seconds. A place sync
   reports the tool's same/differing counts only, with no checks in the synced place. The owner does the testing by hand.
+- Studio work costs tokens by session length: every result is re-sent each turn. Brief long Studio work (captures,
+  exports, sweeps over many scripts) in short sessions, one script or job set each, and ask for results as counts and
+  summaries with bulk data on disk. When a Studio session reports progress and work left, resume it with a fresh
+  subagent and a brief built from the on-disk progress, not the same session. This is the one exception to sending a
+  failed check back to the same session.
 - If a subagent's model can't be reached, say so and ask the owner; never do its part yourself instead.
 - Nothing outward-facing (publishing, uploads, data wipes, real purchases) without the owner's word.
 - An explicit owner instruction for one task (a model, or "do it yourself") wins for that task.
